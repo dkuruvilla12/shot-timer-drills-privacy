@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — Shot Timer Drills</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #f9f9fb;
+    --card: #ffffff;
+    --text: #1c1c1e;
+    --muted: #6b6b70;
+    --accent: #ff8c00;
+    --border: #e5e5ea;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e10;
+      --card: #1c1c1e;
+      --text: #f2f2f7;
+      --muted: #a1a1a6;
+      --border: #2c2c2e;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  .wrap {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 48px 20px 80px;
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 36px;
+  }
+  h1 {
+    font-size: 1.75rem;
+    margin: 0 0 4px;
+  }
+  .eyebrow {
+    color: var(--accent);
+    font-weight: 600;
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin: 0 0 8px;
+  }
+  .sub {
+    color: var(--muted);
+    font-size: 0.95rem;
+    margin: 0 0 32px;
+  }
+  h2 {
+    font-size: 1.1rem;
+    margin: 32px 0 8px;
+  }
+  p, li { color: var(--text); }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .email-button {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 12px 22px;
+    background: var(--accent);
+    color: #fff;
+    border-radius: 999px;
+    font-weight: 600;
+  }
+  .email-button:hover { text-decoration: none; opacity: 0.92; }
+  .faq dt {
+    font-weight: 600;
+    margin-top: 18px;
+  }
+  .faq dd {
+    margin: 4px 0 0;
+    color: var(--muted);
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="card">
+    <p class="eyebrow">Shot Timer Drills</p>
+    <h1>Support</h1>
+    <p class="sub">Questions, bug reports, or feature requests — reach the developer directly.</p>
+
+    <p>
+      <a class="email-button" href="mailto:dskuruvilla@pm.me?subject=Shot%20Timer%20Drills%20Support">
+        Email dskuruvilla@pm.me
+      </a>
+    </p>
+
+    <h2>Common questions</h2>
+    <dl class="faq">
+      <dt>Which shot timer does this app work with?</dt>
+      <dd>Shot Timer Drills connects over Bluetooth to a Competition Electronics ProTimer BT. You can also try the whole app first using the built-in simulated timer, no hardware required.</dd>
+
+      <dt>Is my data backed up anywhere?</dt>
+      <dd>Everything is stored locally on your device only. Use Settings → Export All Data to save your full drill library and history as CSV files whenever you'd like a backup.</dd>
+
+      <dt>The app isn't finding my timer — what should I check?</dt>
+      <dd>Make sure Bluetooth is on, the timer is powered on and nearby, and that you've granted the app Bluetooth permission when asked. Try toggling the timer off and back on if it doesn't connect on the first attempt.</dd>
+
+      <dt>Can I add my own drills?</dt>
+      <dd>Yes — from the Drills tab, build a custom drill from scratch with any target type, scoring method, distance, and par time, or import one from a CSV file.</dd>
+    </dl>
+
+    <p style="margin-top: 32px; color: var(--muted); font-size: 0.9rem;">
+      For how the app handles your data, see the <a href="../">Privacy Policy</a>.
+    </p>
+  </div>
+</div>
+</body>
+</html>
