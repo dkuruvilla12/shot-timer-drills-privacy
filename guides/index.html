@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How-To Guides — Shot Timer Drills</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #f9f9fb;
+    --card: #ffffff;
+    --text: #1c1c1e;
+    --muted: #6b6b70;
+    --accent: #ff8c00;
+    --border: #e5e5ea;
+    --shot-bg: #f2f2f7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e10;
+      --card: #1c1c1e;
+      --text: #f2f2f7;
+      --muted: #a1a1a6;
+      --border: #2c2c2e;
+      --shot-bg: #131315;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  .wrap {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 48px 20px 80px;
+  }
+  .back {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  .back:hover { text-decoration: underline; }
+  .eyebrow {
+    color: var(--accent);
+    font-weight: 600;
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin: 0 0 8px;
+  }
+  h1 {
+    font-size: 2rem;
+    margin: 0 0 8px;
+  }
+  .sub {
+    color: var(--muted);
+    font-size: 1rem;
+    margin: 0 0 36px;
+    max-width: 60ch;
+  }
+  .toc {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 20px 24px;
+    margin-bottom: 48px;
+  }
+  .toc p {
+    margin: 0 0 10px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--muted);
+  }
+  .toc ol {
+    margin: 0;
+    padding-left: 1.2em;
+  }
+  .toc li { margin: 4px 0; }
+  .toc a { color: var(--text); text-decoration: none; }
+  .toc a:hover { color: var(--accent); }
+
+  .guide {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 32px;
+    align-items: start;
+    padding: 40px 0;
+    border-top: 1px solid var(--border);
+    scroll-margin-top: 20px;
+  }
+  .guide:first-of-type { border-top: none; }
+  .guide .shot {
+    background: var(--shot-bg);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 10px;
+  }
+  .guide .shot img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 14px;
+  }
+  .guide .content .num {
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
+  }
+  .guide h2 {
+    font-size: 1.35rem;
+    margin: 4px 0 12px;
+  }
+  .guide p { margin: 0 0 12px; color: var(--text); }
+  .guide ol, .guide ul {
+    margin: 0 0 12px;
+    padding-left: 1.3em;
+  }
+  .guide li { margin: 6px 0; }
+  .guide .tip {
+    background: var(--shot-bg);
+    border-left: 3px solid var(--accent);
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 0.92rem;
+    color: var(--muted);
+    margin-top: 8px;
+  }
+
+  @media (max-width: 680px) {
+    .guide {
+      grid-template-columns: 1fr;
+    }
+    .guide .shot { max-width: 280px; margin: 0 auto; }
+  }
+
+  .footer-note {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  .footer-note a { color: var(--accent); text-decoration: none; }
+  .footer-note a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="../support/">&larr; Back to Support</a>
+  <p class="eyebrow">Shot Timer Drills</p>
+  <h1>How-To Guides</h1>
+  <p class="sub">Six things worth knowing about the app, each in under a minute. Screenshots are from the current version.</p>
+
+  <div class="toc">
+    <p>On this page</p>
+    <ol>
+      <li><a href="#live-timer">Run your first drill</a></li>
+      <li><a href="#range-day">Plan a full Range Day</a></li>
+      <li><a href="#shot-by-shot">See exactly where you gained or lost time</a></li>
+      <li><a href="#history">Track your progress, by drill or by trip</a></li>
+      <li><a href="#drills">Find, favorite, and duplicate drills</a></li>
+      <li><a href="#home">Jump back in from Home</a></li>
+    </ol>
+  </div>
+
+  <div class="guide" id="live-timer">
+    <div class="shot"><img src="images/01_live_timer.jpg" alt="Live timer screen showing a captured time and shot splits"></div>
+    <div class="content">
+      <p class="num">01</p>
+      <h2>Run your first drill</h2>
+      <p>Every drill runs the same way, whether it's one of the built-in standards or one you built yourself:</p>
+      <ol>
+        <li>Open a drill and tap <strong>Start Drill Now</strong>.</li>
+        <li>Tap <strong>Shooter Ready</strong>. The beep fires after a random delay, and your Competition Electronics ProTimer BT streams shots in live — no typing times by hand.</li>
+        <li>When the string ends, your time and every split land on screen automatically.</li>
+        <li>Count hits with the +/&minus; steppers, or tap <strong>Fill Remaining as A</strong> when every round landed clean.</li>
+      </ol>
+      <div class="tip">No timer on hand? Settings → Timer Setup → <strong>Use simulated timer</strong> generates realistic strings so you can run the whole flow without hardware — it's forced on automatically in the iOS Simulator.</div>
+    </div>
+  </div>
+
+  <div class="guide" id="range-day">
+    <div class="shot"><img src="images/02_range_day.jpg" alt="Range Day trip screen showing three completed drills"></div>
+    <div class="content">
+      <p class="num">02</p>
+      <h2>Plan a full Range Day</h2>
+      <p>Line up everything you want to run before you even leave the house:</p>
+      <ol>
+        <li>Home → <strong>Plan Range Trip</strong> → add whichever drills you're bringing, and who's shooting.</li>
+        <li>On the range, open the trip and tap <strong>Run Full Range Day</strong> to move through every drill in order — or tap the play button on any single one to run it out of sequence.</li>
+        <li>Each finished drill gets a green checkmark, and <strong>Resume Range Day</strong> always picks up on the next one you haven't shot yet.</li>
+      </ol>
+      <div class="tip">Results are tracked against each drill, not against the trip — open any drill from History to see every run of it, trip or no trip.</div>
+    </div>
+  </div>
+
+  <div class="guide" id="shot-by-shot">
+    <div class="shot"><img src="images/03_results_chart.jpg" alt="Results screen with a shot-by-shot line chart of split times"></div>
+    <div class="content">
+      <p class="num">03</p>
+      <h2>See exactly where you gained or lost time</h2>
+      <p>Every result includes a <strong>Shot-by-Shot</strong> chart plotting each split against your personal best for that same stage — so instead of one final number, you can see precisely which shot cost you time and which one you actually did faster.</p>
+      <p>It's on the Results screen right after you finish a string, and again anytime from History.</p>
+    </div>
+  </div>
+
+  <div class="guide" id="history">
+    <div class="shot"><img src="images/04_history_trips.jpg" alt="History tab showing personal bests and a By Trip toggle"></div>
+    <div class="content">
+      <p class="num">04</p>
+      <h2>Track your progress, by drill or by trip</h2>
+      <p>The History tab keeps a calendar of every day you've logged a run, a running list of <strong>Recent Personal Bests</strong>, and a toggle to switch how everything below it is grouped:</p>
+      <ul>
+        <li><strong>By Drill</strong> (default) — see run count, last run, and best hit factor for each drill you've shot.</li>
+        <li><strong>By Trip</strong> — the same runs, grouped by the Range Day they happened on.</li>
+      </ul>
+      <p>Tap into any drill for its full run history and a hit-factor trend chart over time.</p>
+    </div>
+  </div>
+
+  <div class="guide" id="drills">
+    <div class="shot"><img src="images/05_drills_search.jpg" alt="Drills tab filtered by a search for Qualification"></div>
+    <div class="content">
+      <p class="num">05</p>
+      <h2>Find, favorite, and duplicate drills</h2>
+      <p>The Drills tab holds your whole library — the 21+ curated standards and qualifications the app ships with, plus anything you've built or imported.</p>
+      <ul>
+        <li>Use the <strong>search bar</strong> to filter by name or keyword instantly.</li>
+        <li><strong>Swipe right</strong> on a drill to favorite it; <strong>swipe left</strong> to duplicate it as a starting point for a variant.</li>
+        <li>The <strong>&hellip; menu</strong> also has <strong>Browse Drill Library</strong> to add more curated drills, plus CSV import/export.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="guide" id="home">
+    <div class="shot"><img src="images/06_home.jpg" alt="Home tab with Quick Start, Plan Range Trip, History, and Jump Back In"></div>
+    <div class="content">
+      <p class="num">06</p>
+      <h2>Jump back in from Home</h2>
+      <p>Home is built to get you shooting in one tap:</p>
+      <ul>
+        <li><strong>Quick Start</strong> — launch straight into any drill.</li>
+        <li><strong>Plan Range Trip</strong> — set up your next Range Day.</li>
+        <li><strong>History</strong> card — your most recent run and best hit factor, at a glance.</li>
+        <li><strong>Jump Back In</strong> — the drills you've run most recently, one tap from running again.</li>
+      </ul>
+      <p>If a session gets interrupted — a force-quit, a phone call — Home also surfaces a <strong>Resume</strong> card so you never lose a string in progress.</p>
+    </div>
+  </div>
+
+  <p class="footer-note">
+    Something not covered here? <a href="../support/">Reach the developer directly</a> or check the <a href="../">Privacy Policy</a> for how your data is handled.
+  </p>
+</div>
+</body>
+</html>
