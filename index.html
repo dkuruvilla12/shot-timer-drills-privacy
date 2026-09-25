@@ -82,10 +82,10 @@
     <h1>Privacy Policy</h1>
     <p class="effective">Effective date: September 8, 2026</p>
 
-    <p>Shot Timer Drills ("the app") is built to work entirely on your device and, if you turn it on, your own private iCloud account. This policy explains, plainly, what that means for your data.</p>
+    <p>Shot Timer Drills ("the app") is built to work entirely on your device, your own private iCloud account, and — only if you explicitly choose to use Buddy Sync — a range buddy you personally invite. This policy explains, plainly, what that means for your data.</p>
 
     <h2>Summary</h2>
-    <p><strong>The app does not collect, transmit, sell, or share any of your data with us or anyone else.</strong> There are no accounts, no analytics, no advertising, and no third-party services embedded in the app. Everything you enter — drills, session history, shot times, shooter names, personal bests — stays on your device, and syncs only to your own private iCloud account if you have iCloud enabled, so it can appear on your other devices. We (the developer) never receive it, never see it, and have no server it could be sent to.</p>
+    <p><strong>The app does not collect, transmit, sell, or share any of your data with us.</strong> There are no accounts, no analytics, no advertising, and no third-party services embedded in the app. Everything you enter — drills, session history, shot times, shooter names, personal bests — stays on your device, and syncs only to your own private iCloud account if you have iCloud enabled, so it can appear on your other devices. We (the developer) never receive it, never see it, and have no server it could be sent to. The one exception is Buddy Sync, described below: a feature you have to turn on yourself, that shares data only with the one specific person you invite — never with us, and never with anyone you haven't explicitly invited.</p>
 
     <h2>What data the app stores, and where</h2>
     <p>The app stores the following, using Apple's SwiftData framework:</p>
@@ -98,6 +98,11 @@
     </ul>
     <p>All of this lives on your device. If iCloud is available and signed in, it also syncs to your own private CloudKit database — the same private, per-user storage Apple provides to any app for iCloud sync — so it carries over to your other devices signed into the same iCloud account. That database is <strong>yours</strong>: Apple's private CloudKit containers are only ever readable by the account they belong to. The developer has no access to it, no visibility into it, and no way to retrieve, view, or restore your data from it. If you're signed out of iCloud, or have it turned off, the app works exactly the same way using on-device storage only.</p>
 
+    <h2>Buddy Sync</h2>
+    <p>Buddy Sync is an optional feature, off by default, that lets two people keep their drills and history in sync with each other. Turning it on for a shooter (from that shooter's profile) sends an invite link — over Messages, AirDrop, or however you choose to send it — to one specific person you pick. Nothing is shared until you send that link and the other person accepts it.</p>
+    <p>Once accepted, it works through Apple's CloudKit sharing, using a private, shared record zone between just the two of you — the same technology Apple provides for sharing a photo album or a note, applied here to drill and range-trip data instead. Drills and equipment (gun/carry style names) sync both ways automatically. A shooter's range trips, sessions, and personal bests only sync if that shooter's own "include this shooter's history" switch is turned on — so enabling Buddy Sync for one shooter never exposes another shooter's history on the same device without a separate, explicit choice.</p>
+    <p>As with private iCloud sync, this data is never sent to the developer or to any server we operate — it travels only between your device and your buddy's device, through Apple's CloudKit infrastructure, under the two of you as the participants. The difference from ordinary private iCloud sync is that a second real person — the one you invited — can see and add to that shared data, which is exactly what the feature is for. You can turn off syncing for a pairing at any time from that shooter's Buddy Sync screen; data already synced stays on both devices, but nothing new is exchanged afterward.</p>
+
     <h2>Bluetooth</h2>
     <p>The app can connect over Bluetooth Low Energy to a supported shot timer (Competition Electronics ProTimer BT, AMG Commander, SG Timer, or DAA Edge), if you choose to pair one, in order to read shot times during a drill. This connection is local, device-to-device — no shot-timer data is sent anywhere beyond your phone and the timer itself.</p>
 
@@ -107,8 +112,11 @@
     <h2>Feedback</h2>
     <p>If you use Send Feedback in Settings, it opens your device's Mail app with a message addressed to the developer. Whatever you write there — your name and note — is sent to the developer's email address the same way any email you send is sent. The app itself does not collect or store this; it's a standard <code>mailto:</code> link, and sending is optional and requires your explicit action in Mail.</p>
 
+    <h2>Timer reports</h2>
+    <p>The app keeps a short log on your device of how your Bluetooth shot timer behaved: the timer's advertised name, its firmware version if it reports one, connection attempts and errors, the raw messages exchanged with the timer, and a tally of how each string went. It contains no shooter names, drill names, or results. This log stays on your device. If you choose Send Timer Report in Timer Setup, or accept the offer to send a report the first time you use a timer that hasn't been tested yet, the app shows you the full report and then opens your Mail app (or the share sheet) with it attached and addressed to the developer. Nothing is sent unless you press send in Mail, and the app itself makes no network requests.</p>
+
     <h2>Analytics, advertising, and third parties</h2>
-    <p>The app contains no analytics SDKs, no advertising SDKs, and no third-party libraries of any kind. The only network activity it ever makes is your own device syncing with your own private iCloud account through Apple's CloudKit — not to us, and not to anyone else. There is no tracking and no advertising of any kind.</p>
+    <p>The app contains no analytics SDKs, no advertising SDKs, and no third-party libraries of any kind. The only network activity it ever makes is your own device syncing through Apple's CloudKit — with your own private iCloud account always, and with a Buddy Sync pairing only if you've explicitly turned that on and invited someone. Neither ever reaches the developer or any server we operate. There is no tracking and no advertising of any kind.</p>
 
     <h2>Children's privacy</h2>
     <p>The app does not knowingly collect information from anyone, including children, because it does not collect information from anyone.</p>
